@@ -1,0 +1,5 @@
+usr/share/logshipper/examples
+var/log/logshipper
+var/run/logshipper
+var/cache/logshipper
+etc/logshipper/patterns.d

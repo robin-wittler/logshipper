@@ -1,0 +1,26 @@
+Source: logshipper
+Section: python
+Priority: extra
+Maintainer: Robin Wittler <r.wittler@mysportgroup.de>
+Build-Depends: debhelper (>= 8.0.0), python, python-setuptools
+Standards-Version: 3.9.3
+Homepage: https://mysportgroup.com
+
+Package: logshipper
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${python:Depends}
+Suggests: kibana
+conflicts: logshipper (<< 0.2.0)
+replaces: logshipper (<< 0.2.0)
+Description: A simple and fast logshipper inspired by logstash.
+ A simple and fast logshipper inspired by logstash that works together
+ with Kibana.
+ .
+ Features:
+ .
+ * automatic logfile config loading/unloading through inotify events
+ * Two delivery modes:
+   - redis
+   - elasticsearch
+ * Auto Tagging and auto fields through config and named regex
+

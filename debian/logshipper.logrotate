@@ -1,0 +1,9 @@
+/var/log/logshipper/logshipper.log {
+    daily
+    missingok
+    rotate 5
+    start 0
+    size 100M
+    compress
+    create 0640 root adm
+}

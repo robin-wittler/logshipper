@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --with python2 --buildsystem=python_distutils
+
+override_dh_python2:
+	dh_python2 -V 2.6-
+
+override_dh_install:
+	dh_install
+	mv debian/logshipper/usr/sbin/logshipper.py debian/logshipper/usr/sbin/logshipper
+	cp debian/logshipper/etc/logshipper/logshipper.cfg debian/logshipper/usr/share/logshipper/examples
+	#cp debian/logshipper/etc/logshipper/patterns.cfg debian/logshipper/usr/share/logshipper/examples

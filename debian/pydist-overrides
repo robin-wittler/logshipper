@@ -1,0 +1,9 @@
+simplejson          python-simplejson
+apscheduler         python-apscheduler
+pyinotify           python-pyinotify
+python-daemon       python-daemon
+lockfile            python-lockfile
+pyelasticsearch     python-pyelasticsearch
+redis               python-redis
+setproctitle        python-setproctitle
+python-dateutil     python-dateutil

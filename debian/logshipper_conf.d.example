@@ -1,0 +1,6 @@
+[input]
+file = /var/log/syslog
+type = syslog
+tags = %(fqdn)s, %(hostname)s, $(type)s
+pattern = %(SYSLOG_LINE)s
+

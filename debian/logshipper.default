@@ -1,0 +1,7 @@
+#
+# Defaults for logshipper
+#
+
+# start logshipper on boot time? Default 0 - which means
+# logshipper start is disabled on boot time.
+START=0

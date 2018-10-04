@@ -1,0 +1,20 @@
+Template: logshipper/redis
+Type: string
+Default: 127.0.0.1
+Description: Enter the fqdn/ip address of your redis server
+ Please enter the FQDN (Fully Qualified Hostname - e.g. myhost.mydomain.tld)
+ or the IP Address of your redis server.
+
+Template: logshipper/elasticsearch
+Type: string
+Default: 127.0.0.1
+Description: Enter the fqdn/ip address of your elasticsearch server
+ Please enter the FQDN (Fully Qualified Hostname - e.g. myhost.mydomain.tld)
+ or the IP Address of your elasticsearch server.
+
+Template: logshipper/choose_output
+Type: select
+Choices: redis elasticsearch
+Default: elasticsearch
+Description: Choose your output plugin
+ Please choose which type of output you want to use.
